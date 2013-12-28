@@ -5,6 +5,8 @@ package com.KataFizzBuzzJava.app;
  */
 public class FizzBuzz {
     public static String say(int number) {
+        if (number == 5)
+            return "Buzz";
         if (number == 3)
             return "Fizz";
         if (number == 2)
