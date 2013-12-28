@@ -17,6 +17,7 @@ public class FizzBuzz {
         FizzBuzzBaseHandler fizzHandler = new FizzHandler(whizzHandler);
         FizzBuzzBaseHandler buzzHandler = new BuzzHandler(fizzHandler);
         FizzBuzzBaseHandler fizzBuzzHandler = new FizzBuzzHander(buzzHandler);
-        return fizzBuzzHandler.generate(number);
+        FizzBuzzBaseHandler fizzBuzzWhizz = new FizzBuzzWhizzHandler(fizzBuzzHandler);
+        return fizzBuzzWhizz.generate(number);
     }
 }
