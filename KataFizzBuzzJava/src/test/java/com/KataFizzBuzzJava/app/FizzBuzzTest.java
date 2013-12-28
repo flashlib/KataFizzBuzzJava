@@ -19,4 +19,10 @@ public class FizzBuzzTest {
     {
         assertEquals("2 should return '2'", "2", FizzBuzz.say(2));
     }
+
+    @Test
+    public void threeShouldSayFizz()
+    {
+        assertEquals("3 should return 'Fizz'", "Fizz", FizzBuzz.say(3));
+    }
 }
