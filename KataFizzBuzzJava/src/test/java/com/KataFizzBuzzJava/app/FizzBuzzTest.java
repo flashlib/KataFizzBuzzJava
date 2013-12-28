@@ -63,6 +63,12 @@ public class FizzBuzzTest {
     }
 
     @Test
+    public void thirtyFiveShouldSayFizzBuzz()
+    {
+        assertEquals("35 should return 'FizzBuzz'", "FizzBuzz", FizzBuzz.say(35));
+    }
+
+    @Test
     public void oneHundredAndThirtyShouldSayFizzBuzz()
     {
         assertEquals("130 should return 'FizzBuzz'", "FizzBuzz", FizzBuzz.say(130));
