@@ -11,8 +11,6 @@ public class FizzBuzz {
             return "Buzz";
         if (number%3 == 0)
             return "Fizz";
-        if (number == 2)
-            return "2";
-        return "1";
+        return Integer.valueOf(number).toString();
     }
 }
