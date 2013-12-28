@@ -13,7 +13,8 @@ public class FizzBuzz {
 //            return "Fizz";
 //        return Integer.valueOf(number).toString();
         FizzBuzzBaseHandler normalHandler = new NormalHandler(null);
-        FizzBuzzBaseHandler fizzHandler = new FizzHandler(normalHandler);
+        FizzBuzzBaseHandler whizzHandler = new WhizzHandler(normalHandler);
+        FizzBuzzBaseHandler fizzHandler = new FizzHandler(whizzHandler);
         FizzBuzzBaseHandler buzzHandler = new BuzzHandler(fizzHandler);
         FizzBuzzBaseHandler fizzBuzzHandler = new FizzBuzzHander(buzzHandler);
         return fizzBuzzHandler.generate(number);

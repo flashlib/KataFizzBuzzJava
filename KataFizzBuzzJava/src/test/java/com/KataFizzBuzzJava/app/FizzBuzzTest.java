@@ -45,6 +45,12 @@ public class FizzBuzzTest {
     }
 
     @Test
+    public void sevenShouldSayWhizz()
+    {
+        assertEquals("7 should say 'Whizz'", "Whizz", FizzBuzz.say(7));
+    }
+
+    @Test
     public void tenShouldSayBuzz()
     {
         assertEquals("10 should return 'Buzz'", "Buzz", FizzBuzz.say(10));
@@ -65,18 +71,12 @@ public class FizzBuzzTest {
     @Test
     public void thirtyFiveShouldSayFizzBuzz()
     {
-        assertEquals("35 should return 'FizzBuzz'", "FizzBuzz", FizzBuzz.say(35));
+        assertEquals("35 should return 'FizzBuzzWhizz'", "FizzBuzzWhizz", FizzBuzz.say(35));
     }
 
     @Test
     public void oneHundredAndThirtyShouldSayFizzBuzz()
     {
         assertEquals("130 should return 'FizzBuzz'", "FizzBuzz", FizzBuzz.say(130));
-    }
-
-    @Test
-    public void sevenShouldSayWhizz()
-    {
-        assertEquals("7 should say 'Whizz'", "Whizz", FizzBuzz.say(7));
     }
 }
