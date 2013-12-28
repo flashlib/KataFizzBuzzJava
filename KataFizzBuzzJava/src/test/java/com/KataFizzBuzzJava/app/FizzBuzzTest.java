@@ -61,4 +61,10 @@ public class FizzBuzzTest {
     {
         assertEquals("15 should return 'FizzBuzz'", "FizzBuzz", FizzBuzz.say(15));
     }
+
+    @Test
+    public void oneHundredAndThirtyShouldSayFizzBuzz()
+    {
+        assertEquals("130 should return 'FizzBuzz'", "FizzBuzz", FizzBuzz.say(130));
+    }
 }
