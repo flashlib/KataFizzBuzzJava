@@ -25,4 +25,10 @@ public class FizzBuzzTest {
     {
         assertEquals("3 should return 'Fizz'", "Fizz", FizzBuzz.say(3));
     }
+
+    @Test
+    public void FiveShouldSayBuzz()
+    {
+        assertEquals("5 should return 'Buzz'", "Buzz", FizzBuzz.say(5));
+    }
 }
