@@ -12,4 +12,26 @@ public abstract class FizzBuzzBaseHandler {
     }
 
     public abstract String generate(int number);
+
+    protected boolean isFizzLikeNumber(int number) {
+        if (number%3 == 0)
+        {
+            return true;
+        }
+
+        String strNumber = Integer.valueOf(number).toString();
+        if (strNumber.contains("3"))
+        {
+            return true;
+        }
+        return false;
+    }
+
+    protected boolean isBuzzLikeNumber(int number) {
+        if (number%5 == 0)
+        {
+            return true;
+        }
+        return false;
+    }
 }

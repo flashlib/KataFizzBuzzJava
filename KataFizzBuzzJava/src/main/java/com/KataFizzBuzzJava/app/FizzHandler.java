@@ -10,17 +10,9 @@ public class FizzHandler extends FizzBuzzBaseHandler {
 
     @Override
     public String generate(int number) {
-        if (number%3 == 0)
-        {
-            return "Fizz";
-        }
-
-        String strNumber = Integer.valueOf(number).toString();
-        if (strNumber.contains("3"))
-        {
-            return "Fizz";
-        }
+        if (isFizzLikeNumber(number)) return "Fizz";
 
         return this.successor.generate(number);
     }
+
 }

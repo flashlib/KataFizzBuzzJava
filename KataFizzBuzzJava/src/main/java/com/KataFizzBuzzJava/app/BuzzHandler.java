@@ -10,10 +10,7 @@ public class BuzzHandler extends FizzBuzzBaseHandler {
 
     @Override
     public String generate(int number) {
-        if (number%5 == 0)
-        {
-            return "Buzz";
-        }
+        if (isBuzzLikeNumber(number)) return "Buzz";
 
         return this.successor.generate(number);
     }
