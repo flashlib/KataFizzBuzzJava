@@ -2,11 +2,15 @@ package com.KataFizzBuzzJava.app;
 
 import org.junit.Test;
 
-import static junit.framework.Assert.assertEquals;
+import static junit.framework.TestCase.assertEquals;
+
 
 /**
- * Created by Jacky on 13-12-28.
- */
+ * Created by IntelliJ IDEA.
+ * User: Jacky
+ * Date: 13-12-28
+ * Time: 下午3:15
+*/
 public class FizzBuzzTest {
     @Test
     public void oneShouldSayOne()

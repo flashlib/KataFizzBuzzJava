@@ -1,8 +1,11 @@
 package com.KataFizzBuzzJava.app;
 
 /**
- * Created by Jacky on 13-12-28.
- */
+ * Created by IntelliJ IDEA.
+ * User: Jacky
+ * Date: 13-12-28
+ * Time: 下午3:14
+*/
 public class FizzBuzzWhizzHandler extends FizzBuzzBaseHandler {
     public FizzBuzzWhizzHandler(FizzBuzzBaseHandler successor) {
         super(successor);
@@ -10,11 +13,9 @@ public class FizzBuzzWhizzHandler extends FizzBuzzBaseHandler {
 
     @Override
     public String generate(int number) {
-        if (number%105 == 0)
-        {
-            return "FizzBuzzWhizz";
-        }
+        if (isFizzLikeNumber(number) && isBuzzLikeNumber(number) && isWhizzLikeNumber(number)) return "FizzBuzzWhizz";
 
         return this.successor.generate(number);
     }
+
 }

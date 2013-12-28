@@ -1,8 +1,11 @@
 package com.KataFizzBuzzJava.app;
 
 /**
- * Created by Jacky on 13-12-28.
- */
+ * Created by IntelliJ IDEA.
+ * User: Jacky
+ * Date: 13-12-28
+ * Time: 下午3:11
+*/
 public abstract class FizzBuzzBaseHandler {
     protected FizzBuzzBaseHandler successor;
 
@@ -14,24 +17,14 @@ public abstract class FizzBuzzBaseHandler {
     public abstract String generate(int number);
 
     protected boolean isFizzLikeNumber(int number) {
-        if (number%3 == 0)
-        {
-            return true;
-        }
-
-        String strNumber = Integer.valueOf(number).toString();
-        if (strNumber.contains("3"))
-        {
-            return true;
-        }
-        return false;
+        return number%3 == 0 || Integer.valueOf(number).toString().contains("3");
     }
 
     protected boolean isBuzzLikeNumber(int number) {
-        if (number%5 == 0)
-        {
-            return true;
-        }
-        return false;
+        return number % 5 == 0;
+    }
+
+    protected boolean isWhizzLikeNumber(int number) {
+        return number % 7 == 0;
     }
 }
