@@ -1,10 +1,12 @@
 package com.KataFizzBuzzJava.app;
 
 /**
- * Created by it on 13-12-28.
+ * Created by Jacky on 13-12-28.
  */
 public class FizzBuzz {
     public static String say(int number) {
+        if (number == 2)
+            return "2";
         return "1";
     }
 }
