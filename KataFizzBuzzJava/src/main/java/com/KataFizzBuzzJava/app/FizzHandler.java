@@ -15,6 +15,12 @@ public class FizzHandler extends FizzBuzzBaseHandler {
             return "Fizz";
         }
 
+        String strNumber = Integer.valueOf(number).toString();
+        if (strNumber.contains("3"))
+        {
+            return "Fizz";
+        }
+
         return this.successor.generate(number);
     }
 }
