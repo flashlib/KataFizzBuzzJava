@@ -5,7 +5,7 @@ package com.KataFizzBuzzJava.app;
  */
 public class FizzBuzz {
     public static String say(int number) {
-        if (number == 5)
+        if (number%5 == 0)
             return "Buzz";
         if (number%3 == 0)
             return "Fizz";
